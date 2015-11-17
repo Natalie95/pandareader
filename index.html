@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/animate.css" rel="stylesheet" type="text/css" />
+  	<title>Panda</title>
+</head>
+<body style="background-image:url(img/bg.jpg)">
+<div class="content-wrapper">
+    <div class="bookcase">
+        <img src="img/bookcase.png">
+    </div>
+    <div class="panda">
+        <img src="img/panda.png">
+    </div>
+    
+    <div class="book">
+        <a href="book.html"><img src="img/book.png"></a>
+    </div>
+
+    <div id="sidebar">
+        <ul class="menu">
+            <li class="BookMarket"><a href="market.html">Book Market</a></li>
+            <li class="Options"><a href="options.html">Options</a></li>
+            <li class="Exit"><a href="Exit">Exit</a></li>
+        </ul>
+    </div>
+  
+    
+</div>
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+   <script>
+    $(function(){
+    $( "body" ).on( "swipeleft", function ( event ){
+    $("#sidebar").addClass("visible");
+    });
+    });$( "body" ).on( "swiperight", function ( event ){
+    $("#sidebar").removeClass("visible");
+    });
+    
+    </script>
+
+</body>
+</html>

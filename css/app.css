@@ -1,0 +1,76 @@
+@import url(https://fonts.googleapis.com/css?family=Chewy);
+body {
+	background-position: fixed; 
+	background-repeat: no-repeat; 
+	background-size: cover;
+}
+.bookcase img {
+	position: fixed;
+	bottom: 68px;
+	left: 15px;
+}
+.panda img {
+	position: fixed;
+	bottom: 29px;
+	left: 15px;
+}
+
+#sidebar {
+	background-image: url(../img/sidebar-op.png);
+	height: 100%;
+	width: 347px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: block;
+	transition: right 0.3s linear;
+	-webkit-overflow-scrolling: touch; 
+	-webkit-transition: background .3s ease-out; 
+	-moz-transition: background .3s ease-out; 
+	-o-transition: background .3s ease-out;
+	z-index: 1111;
+}
+#sidebar ul {
+	margin-top: 140px;
+}
+ul li {
+	list-style: none;
+	text-align: left;
+	cursor: pointer;
+}
+ul li>a {
+	font-family: "Chewy";
+	color: #008dd9;
+	font-size: 42px;
+}
+ul li>a:hover {
+	text-decoration: none;
+}
+.voice{
+	padding-top: 30px;
+}
+.language, .brightless{
+margin-top: 40px;
+}
+.back a {
+	font-size: 50px;
+}
+.back {
+	margin-top: 160px;
+	text-align: center;
+}
+#voice img {
+	position: absolute;
+	top: 230px;
+	right: 10px;
+}
+#brightless img {
+	position: absolute;
+	top: 320px;
+	left: 40px;
+}
+#language img {
+	position: absolute;
+	top: 440px;
+	left: 40px;
+}
